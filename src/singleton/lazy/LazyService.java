@@ -18,6 +18,10 @@ public class LazyService {
 		return instance;
 	}
 
+	public static void call() {
+		System.out.println("LazyService.call");
+	}
+
 	public String getStatus() {
 		return status;
 	}

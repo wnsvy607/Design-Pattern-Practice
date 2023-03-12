@@ -19,6 +19,10 @@ public class ThreadSafeService {
 		return instance;
 	}
 
+	public static void call() {
+		System.out.println("ThreadSafeService.call");
+	}
+
 	public String getStatus() {
 		return status;
 	}

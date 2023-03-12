@@ -3,6 +3,7 @@ package singleton.threadsafe;
 public class ThreadSafeApp {
 	public static void main(String[] args) {
 		System.out.println("앱 시작");
+		ThreadSafeService.call();
 		ThreadSafeService instance1 = ThreadSafeService.getInstance();
 		ThreadSafeService instance2 = ThreadSafeService.getInstance();
 

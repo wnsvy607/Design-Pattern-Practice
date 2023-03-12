@@ -4,7 +4,7 @@ public class BillPughService {
 
 	private String status;
 	private BillPughService(){
-		System.out.println("EagerSingletonService.EagerSingletonService 인스턴스 생성");
+		System.out.println("BillPughService.BillPughService 인스턴스 생성");
 	}
 
 	private static class SingletonHelper {
@@ -14,6 +14,10 @@ public class BillPughService {
 	public static BillPughService getInstance() {
 		System.out.println("getInstance 호출");
 		return SingletonHelper.INSTANCE;
+	}
+
+	public static void call() {
+		System.out.println("BillPughService.call");
 	}
 
 	public String getStatus() {

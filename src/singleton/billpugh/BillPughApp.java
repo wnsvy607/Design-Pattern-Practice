@@ -3,6 +3,7 @@ package singleton.billpugh;
 public class BillPughApp {
 	public static void main(String[] args) {
 		System.out.println("앱 시작");
+		BillPughService.call();
 		BillPughService instance1 = BillPughService.getInstance();
 		BillPughService instance2 = BillPughService.getInstance();
 

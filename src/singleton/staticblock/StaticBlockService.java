@@ -21,6 +21,10 @@ public class StaticBlockService {
 		return instance;
 	}
 
+	public static void call() {
+		System.out.println("StaticBlockService.call");
+	}
+
 	public String getStatus() {
 		return status;
 	}

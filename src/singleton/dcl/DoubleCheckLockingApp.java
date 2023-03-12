@@ -3,6 +3,7 @@ package singleton.dcl;
 public class DoubleCheckLockingApp {
 	public static void main(String[] args) {
 		System.out.println("앱 시작");
+		DoubleCheckLockingService.call();
 		DoubleCheckLockingService instance1 = DoubleCheckLockingService.getInstance();
 		DoubleCheckLockingService instance2 = DoubleCheckLockingService.getInstance();
 

@@ -14,6 +14,10 @@ public class EagerSingletonService {
 		return instance;
 	}
 
+	public static void call() {
+		System.out.println("EagerSingletonService.call");
+	}
+
 	public String getStatus() {
 		return status;
 	}

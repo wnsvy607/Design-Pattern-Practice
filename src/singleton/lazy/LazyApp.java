@@ -1,8 +1,10 @@
 package singleton.lazy;
 
+
 public class LazyApp {
 	public static void main(String[] args) {
 		System.out.println("앱 시작");
+		LazyService.call();
 		LazyService instance1 = LazyService.getInstance();
 		LazyService instance2 = LazyService.getInstance();
 

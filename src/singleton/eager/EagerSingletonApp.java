@@ -3,6 +3,7 @@ package singleton.eager;
 public class EagerSingletonApp {
 	public static void main(String[] args) {
 		System.out.println("앱 시작");
+		EagerSingletonService.call();
 		EagerSingletonService instance1 = EagerSingletonService.getInstance();
 		EagerSingletonService instance2 = EagerSingletonService.getInstance();
 
@@ -18,7 +19,7 @@ public class EagerSingletonApp {
 		System.out.println("instance1 상태 = " + instance1.getStatus());
 		System.out.println("instance2 상태 = " + instance2.getStatus());
 
-		System.out.println("instance 2의 상태 변경");
+		System.out.println("instance2의 상태 변경");
 		instance2.setStatus("변경 후");
 		System.out.println();
 

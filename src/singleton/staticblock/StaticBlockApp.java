@@ -3,6 +3,7 @@ package singleton.staticblock;
 public class StaticBlockApp {
 	public static void main(String[] args) {
 		System.out.println("앱 시작");
+		StaticBlockService.call();
 		StaticBlockService instance1 = StaticBlockService.getInstance();
 		StaticBlockService instance2 = StaticBlockService.getInstance();
 
